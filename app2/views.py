@@ -9,7 +9,7 @@ from .forms import FishForm
 import json
 import base64
 
-URL = "http://127.0.0.1:8000/app1/"
+URL = "https://fishrec.herokuapp.com/app1/"
 
 class FishListView(View):
     def get(self, request, *args, **kwargs):
@@ -21,7 +21,7 @@ class FishListView(View):
 class FishDetailView(View):
     def get(self, request, *args, **kwargs):
         id = kwargs['pk']
-        ur = "http://127.0.0.1:8000/app1/"+str(id)+"/"
+        ur = "https://fishrec.herokuapp.com/app1/"+str(id)+"/"
         r = requests.get(url=ur)
         context = r.json()
         return render(request, "app2/detail.html", {"data": context})
