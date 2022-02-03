@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-p(j2b&3-6bs0zxt%0&f!5dsfax5hwjc$a+ox5wk#bu(&50ze4(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://fishrec.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
