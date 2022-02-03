@@ -23,7 +23,4 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('app1/', include('app1.urls')),
     path('app2/', include('app2.urls')),
-]
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL,
-                          document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
