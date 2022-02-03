@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'fishrec.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sample123',
+        'NAME': 'd1hhjlf3nap4mu',
         'USER': 'zctqhtycadmolb',
         'PASSWORD': 'c75a1c8d2630d790386df018a1c7a9fd7e7922a0d94ef49a4bc89d979243a7b4',
         'HOST': 'ec2-18-235-192-50.compute-1.amazonaws.com',
